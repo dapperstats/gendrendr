@@ -1,0 +1,14 @@
+^Meta$
+^doc$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.travis\.yml$
+^CONTRIBUTING\.md$
+^CODE_OF_CONDUCT\.md$
+^_pkgdown\.yml$
+^LICENSE\.md$
+^\.zenodo\.json$
+^inst/WORDLIST$
+^codecov\.yml$
+^notes.R$
+^docs$
