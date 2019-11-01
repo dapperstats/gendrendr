@@ -1,0 +1,8 @@
+pandoc: '2.2'
+pkgdown: 1.4.1
+pkgdown_sha: ~
+articles: []
+urls:
+  reference: https://dapperstats.github.io/gendrendr/reference
+  article: https://dapperstats.github.io/gendrendr/articles
+
