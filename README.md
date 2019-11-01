@@ -20,8 +20,6 @@ norm, which does violence to individuals who are non-binary and erases culutres 
 5. gender cannot be accurately inferred from names, presentations, pronouns or other such factors, and assuming it can and that the consequences of any failure are trivial speaks to the devaluation of transgender, non-binary, and gender-non-conforming life...and this is not absolved by using large data sets and fancy statistics; and 
 6. if it is important for some reason to know what someone's gender is, the only way to accurately, respectfully, and definitively obtain that information is from that person.
 
-The package is currently in development by Juniper L. Simonis of [DAPPER Stats](https://www.dapperstats.com).
-
 ## Status: Experimental, Active Development
 
 The `gendrendr` package is currently being actively developed, and is an early stage of package construction.
@@ -33,6 +31,14 @@ You can install the R package from github:
 ```r
 install.packages("devtools")
 devtools::install_github("dapperstats/gendrendr")
+```
+
+## Basic use
+
+The main function `gendr` is used to highlight the issues associated with assigning gender to an individual. It can take multiple names, locations, languages, years, and methods:
+
+```r
+gendrendr::gendr(names = c("Sam", "Morgan", "Juniper"), years = 1920, locations = "United States", language = "English", method = "standard")
 ```
 
 ## Author Contributions
