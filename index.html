@@ -82,7 +82,6 @@
 <li>gender cannot be accurately inferred from names, presentations, pronouns or other such factors, and assuming it can and that the consequences of any failure are trivial speaks to the devaluation of transgender, non-binary, and gender-non-conforming life…and this is not absolved by using large data sets and fancy statistics; and</li>
 <li>if it is important for some reason to know what someone’s gender is, the only way to accurately, respectfully, and definitively obtain that information is from that person.</li>
 </ol>
-<p>The package is currently in development by Juniper L. Simonis of <a href="https://www.dapperstats.com">DAPPER Stats</a>.</p>
 <div id="status-experimental-active-development" class="section level2">
 <h2 class="hasAnchor">
 <a href="#status-experimental-active-development" class="anchor"></a>Status: Experimental, Active Development</h2>
@@ -94,6 +93,12 @@
 <p>You can install the R package from github:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"dapperstats/gendrendr"</span>)</a></code></pre></div>
+</div>
+<div id="basic-use" class="section level2">
+<h2 class="hasAnchor">
+<a href="#basic-use" class="anchor"></a>Basic use</h2>
+<p>The main function <code>gendr</code> is used to highlight the issues associated with assigning gender to an individual. It can take multiple names, locations, languages, years, and methods:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">gendrendr<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/gendrendr/man/gendr.html">gendr</a></span>(<span class="dt">names =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Sam"</span>, <span class="st">"Morgan"</span>, <span class="st">"Juniper"</span>), <span class="dt">years =</span> <span class="dv">1920</span>, <span class="dt">locations =</span> <span class="st">"United States"</span>, <span class="dt">language =</span> <span class="st">"English"</span>, <span class="dt">method =</span> <span class="st">"standard"</span>)</a></code></pre></div>
 </div>
 <div id="author-contributions" class="section level2">
 <h2 class="hasAnchor">
