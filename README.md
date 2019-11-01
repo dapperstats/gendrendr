@@ -1,7 +1,15 @@
-# gendrendr
-Debinarizing gender
+<img src="man/figures/gendrendr.png" width="200px" align="right">
 
-This package contains a simple set of functions designed to highlight the inaccuracy and violence of assigning genders to others.
+# gendrendr 0.1.0
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dapperstats/gendrendr/master/LICENSE)
+[![Build Status](https://api.travis-ci.org/dapperstats/gendrendr.svg?branch=master)](https://travis-ci.org/dapperstats/gendrendr)
+[![Lifecycle:maturing](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Codecov test coverage](https://img.shields.io/codecov/c/github/dapperstats/gendrendr/master.svg)](https://codecov.io/github/dapperstats/gendrendr/branch/master)
+
+`gendrendr` contains a simple set of functions designed to highlight the inaccuracy and violence of assigning genders to others.
+
+
 The premise is as follows: 
 1. the assignment of gender to another in the absence of personal confirmation is an act of violence that perpetuates hierarchical systems f oppression and can be personally traumatizing; 
 2. the assumption of the correctness of gender assigned at birth reinforces archaic medical views and state-sanctioned violence; 
@@ -13,3 +21,22 @@ norm, which does violence to individuals who are non-binary and erases culutres 
 6. if it is important for some reason to know what someone's gender is, the only way to accurately, respectfully, and definitively obtain that information is from that person.
 
 The package is currently in development by Juniper L. Simonis of [DAPPER Stats](https://www.dapperstats.com).
+
+## Status: Experimental, Active Development
+
+The `gendrendr` package is currently being actively developed, and is an early stage of package construction.
+
+## Installation
+
+You can install the R package from github:
+
+```r
+install.packages("devtools")
+devtools::install_github("dapperstats/gendrendr")
+```
+
+## Author Contributions
+
+**J. L. Simonis** is presently the sole author of `gendrendr`. 
+
+If you are interested in contibuting, see the [Contributor Guidelines](https://github.com/dapperstats/gendrendr/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/dapperstats/gendrendr/blob/master/CODE_OF_CONDUCT.md).
