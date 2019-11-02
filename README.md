@@ -38,7 +38,7 @@ devtools::install_github("dapperstats/gendrendr")
 The main function `gendr` is used to highlight the issues associated with assigning gender to an individual. It can take multiple names, locations, languages, years, and methods:
 
 ```r
-gendrendr::gendr(names = c("Sam", "Morgan", "Juniper"), years = 1920, locations = "United States", language = "English", method = "standard")
+gendrendr::gendr(names = "Juniper", years = 1920:2020, locations = "United States", language = "English", method = "standard")
 ```
 
 ## Authors and Contributions
