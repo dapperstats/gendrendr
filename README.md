@@ -6,6 +6,8 @@
 [![Build Status](https://api.travis-ci.org/dapperstats/gendrendr.svg?branch=master)](https://travis-ci.org/dapperstats/gendrendr)
 [![Lifecycle:maturing](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Codecov test coverage](https://img.shields.io/codecov/c/github/dapperstats/gendrendr/master.svg)](https://codecov.io/github/dapperstats/gendrendr/branch/master)
+[![DOI](https://zenodo.org/badge/218626667.svg)](https://zenodo.org/badge/latestdoi/218626667)
+
 
 `gendrendr` contains a simple set of functions designed to highlight the inaccuracy and violence of assigning genders to others.
 
