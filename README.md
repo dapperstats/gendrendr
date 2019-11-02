@@ -22,7 +22,7 @@ The premise is as follows:
 
 ## Status: Experimental, Active Development
 
-The `gendrendr` package is currently being actively developed, and is an early stage of package construction.
+The `gendrendr` package is currently being actively developed and the API is evolving. 
 
 ## Installation
 
