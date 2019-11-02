@@ -47,5 +47,9 @@ If you are interested in contributing, see the [Contributor Guidelines](https://
 
 ## About the name and logo
 
-The name `gendrendr` was proposed by Lewis Bartlett as an edit to `genderEnder` on [the #Rstats twitter](https://twitter.com/BeesAndBaking/status/1189372151268282368), which means "one who ends gender", which I believe to be a righteous label for oneself. The package is meant to be a counter to and commentary on the perpetuation of gender stereotypes in the study of gender. The logo includes the label &#8709;
+The package is a counter to and commentary on the perpetuation of gender stereotypes in the study of gender. 
+
+The name `gendrendr` was proposed by Lewis Bartlett as an edit to my initial `genderEnder` on [the #Rstats twitter](https://twitter.com/BeesAndBaking/status/1189372151268282368) channel, which means "one who ends gender", which I believe to be a righteous label for oneself. I am certainly a gender-ender. (#LGBTQIAinSTEM #NBinSTEM)
+
+The logo includes the [&#8709; symbol](https://en.wikipedia.org/wiki/Empty_set), which means an "empty set" and is used by some non-binary (specifically, [neutrois](https://nonbinary.wiki/wiki/Neutrois)) individuals as a symbol to reference themselves. I use this symbol personally. The brick motif and the &#8709;'s arm "breaking" it are a reference to [Stonewall](https://en.wikipedia.org/wiki/Stonewall_riots) and the use of building materials ([bricks](https://www.nytimes.com/2019/05/31/us/first-brick-at-stonewall-lgbtq.html)) to start riots, breakdown buildings, and dismantle structures. The green color is presently not part of the "western"/USAmerican gender color schema.
 
