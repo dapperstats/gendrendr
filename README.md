@@ -1,6 +1,6 @@
 <img src="man/figures/gendrendr.png" width="200px" align="right">
 
-# gendrendr 0.1.0
+# gendrendr: for enders of gender
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dapperstats/gendrendr/master/LICENSE)
 [![Build Status](https://api.travis-ci.org/dapperstats/gendrendr.svg?branch=master)](https://travis-ci.org/dapperstats/gendrendr)
@@ -38,7 +38,8 @@ devtools::install_github("dapperstats/gendrendr")
 The main function `gendr` is used to highlight the issues associated with assigning gender to an individual. It can take multiple names, locations, languages, years, and methods:
 
 ```r
-gendrendr::gendr(names = "Juniper", years = 1920:2020, locations = "United States", language = "English", method = "standard")
+library(gendrendr)
+gendr(names = "Juniper", years = 1920:2020, locations = "United States", language = "English", method = "standard")
 ```
 
 ## Authors and Contributions
@@ -51,7 +52,7 @@ If you are interested in contributing, see the [Contributor Guidelines](https://
 
 The package is a counter to and commentary on the perpetuation of gender stereotypes in the study of gender. 
 
-The name `gendrendr` was proposed by Lewis Bartlett as an edit to my initial `genderEnder` on [the #Rstats twitter](https://twitter.com/BeesAndBaking/status/1189372151268282368) channel, which means "one who ends gender", which I believe to be a righteous label for oneself. I am certainly a gender-ender. (#LGBTQIAinSTEM #NBinSTEM)
+The name `gendrendr` was proposed by [Lewis Bartlett as an edit to my initial `genderEnder` on the #Rstats twitter](https://twitter.com/BeesAndBaking/status/1189372151268282368) and means "one who ends gender", which I believe to be a righteous label for oneself. I am a gender-ender. #LGBTQIAinSTEM #NBinSTEM
 
-The logo includes the [&#8709; symbol](https://en.wikipedia.org/wiki/Empty_set), which means an "empty set" and is used by some non-binary (specifically, [neutrois](https://nonbinary.wiki/wiki/Neutrois)) individuals as a symbol to reference themselves. I use this symbol personally. The brick motif and the &#8709;'s arm "breaking" it are a reference to [Stonewall](https://en.wikipedia.org/wiki/Stonewall_riots) and the use of building materials ([bricks](https://www.nytimes.com/2019/05/31/us/first-brick-at-stonewall-lgbtq.html)) to start riots, breakdown buildings, and dismantle structures. The green color is presently not part of the "western"/USAmerican gender color schema.
+The logo includes the [&#8709; symbol](https://en.wikipedia.org/wiki/Empty_set), which means an "empty set" and is used by some non-binary (specifically, [neutrois](https://nonbinary.wiki/wiki/Neutrois)) individuals as a symbol to reference themselves. I use this symbol personally. The brick motif and the &#8709;'s arm "breaking" it are a reference to [Stonewall](https://en.wikipedia.org/wiki/Stonewall_riots) and the use of building materials ([bricks](https://www.nytimes.com/2019/05/31/us/first-brick-at-stonewall-lgbtq.html)) to start riots, breakdown buildings, and dismantle structures. The green color is presently not part of the USAmerican gender color schema.
 
