@@ -14,7 +14,7 @@ The premise is as follows:
 1. the assignment of gender to another in the absence of personal confirmation is an act of violence that perpetuates hierarchical systems of oppression and can be personally traumatizing; 
 2. the assumption of the correctness of gender assigned at birth reinforces archaic medical views and state-sanctioned violence; 
 3. gender is a construct that varies over space, time, culture, and ethnicity, and assuming that data from one context apply to another reinforces gendered imperialist violence and perpetuates cultural stereotypes; 
-4. of specific relevance is the fact that gender is not a binary, and use of data that assume a gender binary reinforces that norm, which does violence to individuals who are non-binary and erases culutres that embrace a diversity of genders; 
+4. of specific relevance is the fact that gender is not a binary, and use of data that assume a gender binary reinforces that norm, which does violence to individuals who are non-binary and erases culurues that embrace a diversity of genders; 
 5. gender cannot be accurately inferred from names, presentations, pronouns or other such factors, and assuming it can and that the consequences of any failure are trivial speaks to the devaluation of transgender, non-binary, and gender-non-conforming life...and this is not absolved by using large data sets and fancy statistics; and 
 6. if it is important for some reason to know what someone's gender is, the only way to accurately, respectfully, and definitively obtain that information is from that person.
 
@@ -39,8 +39,12 @@ The main function `gendr` is used to highlight the issues associated with assign
 gendrendr::gendr(names = c("Sam", "Morgan", "Juniper"), years = 1920, locations = "United States", language = "English", method = "standard")
 ```
 
-## Author Contributions
+## Authors and Contributions
 
 **J. L. Simonis** is presently the sole author of `gendrendr`. 
 
-If you are interested in contibuting, see the [Contributor Guidelines](https://github.com/dapperstats/gendrendr/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/dapperstats/gendrendr/blob/master/CODE_OF_CONDUCT.md).
+If you are interested in contributing, see the [Contributor Guidelines](https://github.com/dapperstats/gendrendr/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/dapperstats/gendrendr/blob/master/CODE_OF_CONDUCT.md).
+
+The name `gendrendr` was proposed by Lewis Bartlett as an edit to `genderEnder` on twitter
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&#39;gendrendr&#39; is my take</p>&mdash; Lewis &#39;Horticultural Lad&#39; Bartlett 🐝🍰 (@BeesAndBaking) <a href="https://twitter.com/BeesAndBaking/status/1189372151268282368?ref_src=twsrc%5Etfw">October 30, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

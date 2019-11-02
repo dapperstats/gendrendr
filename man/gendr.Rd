@@ -6,7 +6,7 @@
 \title{Do not assign gender to someone}
 \usage{
 gendr(names = NULL, locations = NULL, languages = NULL,
-  years = NULL, methods = "genderizers")
+  years = NULL, methods = "standard")
 
 gendr_warning()
 }
@@ -19,7 +19,7 @@ available.}
 \item{languages}{\code{character} vector of languages. All options
 available.}
 
-\item{years}{\code{integer}-conformible vector of years. All options 
+\item{years}{\code{integer}-conformable vector of years. All options 
 available.}
 
 \item{methods}{\code{character} vector of methods. All options available.}
@@ -45,8 +45,8 @@ Recognizing that gender is an individual, person
 }
 \examples{
  \donttest{
- gendr("max", "usa", "english", 1990)
- genr_warning()
+ gendr("max", "usa", "english", 1990) # produces warning
+ genr_warning() # produces warning
  }
 
 }

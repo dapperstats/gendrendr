@@ -22,7 +22,7 @@
 #' @param languages \code{character} vector of languages. All options
 #'   available.
 #'
-#' @param years \code{integer}-conformible vector of years. All options 
+#' @param years \code{integer}-conformable vector of years. All options 
 #'   available.
 #'
 #' @param methods \code{character} vector of methods. All options available.
@@ -33,14 +33,14 @@
 #'
 #' @examples
 #'  \donttest{
-#'  gendr("max", "usa", "english", 1990)
-#'  genr_warning()
+#'  gendr("max", "usa", "english", 1990) # produces warning
+#'  genr_warning() # produces warning
 #'  }
 #'
 #' @export
 #'
 gendr <- function(names = NULL, locations = NULL, languages = NULL, 
-                  years = NULL, methods = "genderizers"){
+                  years = NULL, methods = "standard"){
   if(is.null(names)){
     names <- Sys.info()["user"]
   }

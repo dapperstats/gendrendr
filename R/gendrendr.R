@@ -13,7 +13,7 @@
 #'  stereotypes; [4] of specific relevance is the fact that gender is not
 #'  a binary, and use of data that assume a gender binary reinforces that
 #'  norm, which does violence to individuals who are non-binary and erases 
-#'  culutres that embrace a diversity of genders; [5] gender cannot be 
+#'  cultures that embrace a diversity of genders; [5] gender cannot be 
 #'  accurately inferred from names, presentations, pronouns or other such
 #'  factors, and assuming it can and that the consequences of any failure
 #'  are trivial speaks to the devaluation of transgender, non-binary,
