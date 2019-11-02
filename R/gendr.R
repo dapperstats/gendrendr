@@ -34,7 +34,7 @@
 #' @examples
 #'  \donttest{
 #'  gendr("max", "usa", "english", 1990) # produces warning
-#'  genr_warning() # produces warning
+#'  gendr_warning() # produces warning
 #'  }
 #'
 #' @export

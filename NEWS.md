@@ -2,6 +2,17 @@
 
 Version numbers follow [Semantic Versioning](https://semver.org/).
 
+# [gendrendr 0.1.2](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.2)
+*2019-11-02*
+
+### Added `codecov.yml` to manage code coverage
+
+### Bug fixed in example for `gendr`
+* Addresses [Issue 3](https://github.com/dapperstats/gendrendr/issues/3)
+
+### Added `cran-comments.md` file
+* Added to `.Rbuildignore`
+
 # [gendrendr 0.1.1](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.1)
 *2019-11-01*
 

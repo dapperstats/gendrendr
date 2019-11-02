@@ -12,3 +12,4 @@
 ^codecov\.yml$
 ^notes.R$
 ^docs$
+^cran-comments\.md$
