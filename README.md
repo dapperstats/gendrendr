@@ -39,7 +39,7 @@ The main function `gendr` is used to highlight the issues associated with assign
 
 ```r
 library(gendrendr)
-gendr(names = "Sam", years = 1920:2020, locations = "United States", languages = "English", method = "standard")
+gendr(names = "Sam", years = 1920:2020, locations = "United States", languages = "English", methods = "standard")
 ```
 
 ## Authors and Contributions
