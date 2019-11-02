@@ -45,6 +45,7 @@ gendrendr::gendr(names = c("Sam", "Morgan", "Juniper"), years = 1920, locations 
 
 If you are interested in contributing, see the [Contributor Guidelines](https://github.com/dapperstats/gendrendr/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/dapperstats/gendrendr/blob/master/CODE_OF_CONDUCT.md).
 
-The name `gendrendr` was proposed by Lewis Bartlett as an edit to `genderEnder` on twitter
+## About the name and logo
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&#39;gendrendr&#39; is my take</p>&mdash; Lewis &#39;Horticultural Lad&#39; Bartlett 🐝🍰 (@BeesAndBaking) <a href="https://twitter.com/BeesAndBaking/status/1189372151268282368?ref_src=twsrc%5Etfw">October 30, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+The name `gendrendr` was proposed by Lewis Bartlett as an edit to `genderEnder` on [the #Rstats twitter](https://twitter.com/BeesAndBaking/status/1189372151268282368), which means "one who ends gender", which I believe to be a righteous label for oneself. The package is meant to be a counter to and commentary on the perpetuation of gender stereotypes in the study of gender. The logo includes the label &#8709;
+
