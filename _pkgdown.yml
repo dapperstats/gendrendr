@@ -6,6 +6,7 @@ navbar:
   structure:
     left: [home, reference, news]
     right: [twitter, github] 
+  components: 
     reference: 
       text: "Functions"
       href: reference/index.html
