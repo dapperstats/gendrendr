@@ -2,6 +2,11 @@
 
 Version numbers follow [Semantic Versioning](https://semver.org/).
 
+# gendrendr 0.1.5
+*Active development*
+
+### Minor editing to pkgdown site
+
 # [gendrendr 0.1.4](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.4)
 *2019-11-02*
 

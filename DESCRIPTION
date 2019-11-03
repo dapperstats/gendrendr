@@ -1,5 +1,5 @@
 Package: gendrendr
-Title: End Gender Binaries
+Title: For Gender Enders
 Version: 0.1.4
 Authors@R: c(person(c("Juniper", "L."), "Simonis", role = c("aut", "cre"), 
              email = "simonis@dapperstats.com", comment = c(ORCID = "0000-0001-9798-0460")))

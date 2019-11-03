@@ -1,12 +1,11 @@
-<img src="man/figures/gendrendr.png" width="200px" align="right">
-
-# gendrendr: for enders of gender
-
+# For enders of gender
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dapperstats/gendrendr/master/LICENSE)
 [![Build Status](https://api.travis-ci.org/dapperstats/gendrendr.svg?branch=master)](https://travis-ci.org/dapperstats/gendrendr)
 [![Lifecycle:maturing](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Codecov test coverage](https://img.shields.io/codecov/c/github/dapperstats/gendrendr/master.svg)](https://codecov.io/github/dapperstats/gendrendr/branch/master)
 [![DOI](https://zenodo.org/badge/218626667.svg)](https://zenodo.org/badge/latestdoi/218626667)
+
+<img src="man/figures/gendrendr.png" width="200px" align="right">
 
 
 `gendrendr` contains a simple set of functions designed to highlight the inaccuracy and violence of assigning genders to others.
