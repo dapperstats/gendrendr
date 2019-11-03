@@ -23,12 +23,12 @@ The premise is as follows:
 
 ## Status: Experimental, Active Development
 
-The `gendrendr` package is being developed and the API is evolving. *`v0.1.2`* has been submitted to CRAN.
+`gendrendr` is being developed and the API is evolving. *`v0.1.2`* has been submitted to CRAN.
 
 
 ## Installation
 
-You can install the R package from github:
+You can install the `gendrendr` R package from github:
 
 ```r
 install.packages("devtools")
@@ -44,7 +44,7 @@ library(gendrendr)
 gendr(names = "Sam", years = 1920:2020, locations = "United States", languages = "English", methods = "standard")
 ```
 
-It also makes assumptions about the inputs, so you could functionally run `gendr` with default inputs:
+It also makes assumptions about the inputs, so you could functionally run `gendr` with defaults:
 
 ```r
 gendr()
