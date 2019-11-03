@@ -23,7 +23,9 @@ The premise is as follows:
 
 ## Status: Experimental, Active Development
 
-`gendrendr` is being developed and the API is evolving. *`v0.1.2`* has been submitted to CRAN.
+`gendrendr` is being developed and the API is evolving. 
+
+**`v0.1.2`** has been submitted to CRAN.
 
 
 ## Installation
