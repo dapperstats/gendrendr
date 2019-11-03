@@ -24,7 +24,7 @@ The premise is as follows:
 
 `gendrendr` is being developed and the API is evolving. 
 
-[**`v0.1.2`**](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.2) has been submitted to CRAN (although it was accidentally labeled v0.1.1 in the `DESCRIPTION`]).
+[**`v0.1.2`**](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.2) has been submitted to CRAN (although it was accidentally labeled v0.1.1 in the `DESCRIPTION`).
 
 
 ## Installation
