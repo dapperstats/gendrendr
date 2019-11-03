@@ -4,7 +4,7 @@
 \name{gendrendr}
 \alias{gendrendr}
 \alias{gendrendr-package}
-\title{Ending Binary Gender Application}
+\title{Ending Gender Application}
 \description{
 This package contains a simple set of functions designed to
  highlight the inaccuracy and violence of assigning genders to others.

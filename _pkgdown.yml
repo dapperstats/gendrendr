@@ -1,3 +1,20 @@
 url: https://dapperstats.github.io/gendrendr
 development:
-  mode: release
+  mode: auto
+navbar:
+  title: "gendrendr"
+  structure:
+    left: [home, reference, news]
+    right: [twitter, github] 
+    reference: 
+      text: "Functions"
+      href: reference/index.html
+    news: 
+      text: "News"
+      href: news/index.html
+    twitter:
+      icon: fa-twitter
+      href: https://twitter.com/dapperstats
+    github:
+      icon: fa-github
+      href: https://github.com/dapperstats/gendrendr
