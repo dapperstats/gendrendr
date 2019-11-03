@@ -89,12 +89,12 @@
 <div id="status-experimental-active-development" class="section level2">
 <h2 class="hasAnchor">
 <a href="#status-experimental-active-development" class="anchor"></a>Status: Experimental, Active Development</h2>
-<p>The <code>gendrendr</code> package is being developed and the API is evolving. <em><code>v0.1.2</code></em> has been submitted to CRAN.</p>
+<p><code>gendrendr</code> is being developed and the API is evolving. <em><code>v0.1.2</code></em> has been submitted to CRAN.</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the R package from github:</p>
+<p>You can install the <code>gendrendr</code> R package from github:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"dapperstats/gendrendr"</span>)</a></code></pre></div>
 </div>
@@ -104,7 +104,7 @@
 <p>The main function <code>gendr</code> is used to highlight the issues associated with assigning gender to an individual. It can take multiple names, locations, languages, years, and methods:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(gendrendr)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="reference/gendr.html">gendr</a></span>(<span class="dt">names =</span> <span class="st">"Sam"</span>, <span class="dt">years =</span> <span class="dv">1920</span><span class="op">:</span><span class="dv">2020</span>, <span class="dt">locations =</span> <span class="st">"United States"</span>, <span class="dt">languages =</span> <span class="st">"English"</span>, <span class="dt">methods =</span> <span class="st">"standard"</span>)</a></code></pre></div>
-<p>It also makes assumptions about the inputs, so you could functionally run <code>gendr</code> with default inputs:</p>
+<p>It also makes assumptions about the inputs, so you could functionally run <code>gendr</code> with defaults:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="reference/gendr.html">gendr</a></span>()</a></code></pre></div>
 </div>
 <div id="authors-and-contributions" class="section level2">
