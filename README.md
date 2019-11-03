@@ -18,11 +18,13 @@ The premise is as follows:
 3. gender is a construct that varies over space, time, culture, and ethnicity, and assuming that data from one context apply to another reinforces gendered imperialist violence and perpetuates cultural stereotypes; 
 4. of specific relevance is the fact that gender is not a binary, and use of data that assume a gender binary reinforces that norm, which does violence to individuals who are non-binary and erases culurues that embrace a diversity of genders; 
 5. gender cannot be accurately inferred from names, presentations, pronouns or other such factors, and assuming it can and that the consequences of any failure are trivial speaks to the devaluation of transgender, non-binary, and gender-non-conforming life...and this is not absolved by using large data sets and fancy statistics; and 
-6. if it is important for some reason to know what someone's gender is, the only way to accurately, respectfully, and definitively obtain that information is from that person.
+6. if it is important for some reason to know what someone's gender is, the only way to accurately, respectfully, and definitively obtain that information is from that person; and
+7. gender and sex are both imperfect constructs and drawing distinctions between them creates unnecessary hierarchies--sex is as problematic (if not moreso) a concept than gender and holding it in any higher regard elevates out-dated medicalized views and perpetuates systematic oppressions. 
 
 ## Status: Experimental, Active Development
 
-The `gendrendr` package is currently being actively developed and the API is evolving. 
+The `gendrendr` package is being developed and the API is evolving. *`v0.1.2`* has been submitted to CRAN.
+
 
 ## Installation
 
@@ -40,6 +42,12 @@ The main function `gendr` is used to highlight the issues associated with assign
 ```r
 library(gendrendr)
 gendr(names = "Sam", years = 1920:2020, locations = "United States", languages = "English", methods = "standard")
+```
+
+It also makes assumptions about the inputs, so you could functionally run `gendr` with default inputs:
+
+```r
+gendr()
 ```
 
 ## Authors and Contributions
