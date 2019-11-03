@@ -2,6 +2,12 @@
 
 Version numbers follow [Semantic Versioning](https://semver.org/).
 
+# [gendrendr 0.1.3](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.3)
+*2019-11-02*
+
+### Addition of the premise regarding the sex-gender distinction
+* Premise 7 (gender and sex are both imperfect constructs and drawing distinctions between them creates unnecessary hierarchies--sex is as problematic (if not moreso) a concept than gender and holding it in any higher regard elevates out-dated medicalized views and perpetuates systematic oppressions) was added to make clear that all of the content which refers to "gender" could functionally be applied to "sex" and that using one or the other is fine, but for consistency here we're using gender. 
+
 # [gendrendr 0.1.2](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.2)
 *2019-11-02*
 
