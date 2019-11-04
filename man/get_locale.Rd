@@ -4,7 +4,11 @@
 \alias{get_locale}
 \title{Get the language and location of a system locale}
 \usage{
-get_locale()
+get_locale(category = "LC_TIME")
+}
+\arguments{
+\item{category}{\code{character} string of the locale environmental 
+variable to use, passed directly to \code{\link[base]{Sys.getlocale}}.}
 }
 \value{
 \code{character} vector with elements \code{"language"} and 

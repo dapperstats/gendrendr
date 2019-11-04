@@ -66,6 +66,9 @@ check_type <- function(x, type){
 #'
 #' @description OS-flexible approach to determining the system locale with 
 #'  respect to language and location.
+#' 
+#' @param category \code{character} string of the locale environmental 
+#'  variable to use, passed directly to \code{\link[base]{Sys.getlocale}}.
 #'
 #' @return \code{character} vector with elements \code{"language"} and 
 #'  \code{"location"}. 
@@ -75,14 +78,12 @@ check_type <- function(x, type){
 #'
 #' @export 
 #'
-get_locale <- function(){
+get_locale <- function(category = "LC_TIME"){
   ismac <- Sys.info()["sysname"] == "Darwin"
   issolaris <- Sys.info()["sysname"] == "SunOS"
   splitchar <- ifelse(ismac | issolaris, "/", ";")
-  locale <- Sys.getlocale()
-  lc_type <- "LC_TIME"
+  locale <- Sys.getlocale(category)
   locale <- strsplit(locale, splitchar)[[1]]
-  locale <- locale[grep(lc_type, locale)]
   locale <- sub(".*=", "", locale)
   locale <- strsplit(locale, "_")[[1]]
   locale <- setNames(locale, c("language", "location"))
