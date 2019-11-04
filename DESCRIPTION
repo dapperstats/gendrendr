@@ -2,7 +2,8 @@ Package: gendrendr
 Title: For Gender Enders
 Version: 0.1.5
 Authors@R: c(person(c("Juniper", "L."), "Simonis", role = c("aut", "cre"), 
-             email = "simonis@dapperstats.com", comment = c(ORCID = "0000-0001-9798-0460")))
+             email = "simonis@dapperstats.com", comment = c(ORCID = "0000-0001-9798-0460")),
+             person("Chuck", "Leong", role = "ctb"))
 Description: Recognize the inherent individuality and personal nature of each person's gender or lack thereof. Do not assign genders to others. Have some support while you break the gender binary. Show love and support to your non-binary, transgender, and gender-non-conforming kith by actively challenging research agendas based on preconceptions of gender.
 License: MIT + file LICENSE
 URL: https://github.com/dapperstats/gendrendr

@@ -42,38 +42,22 @@
 #'
 gendr <- function(names = NULL, locations = NULL, languages = NULL, 
                   years = NULL, methods = "standard"){
-  if(is.null(names)){
-    names <- Sys.info()["user"]
-  }
-  if(is.null(locations)){
-    lc <- strsplit(strsplit(Sys.getlocale(), "=")[[1]][2], "\\.")[[1]][1]
-    locations <- strsplit(lc, "_")[[1]][2]
-  }
-  if(is.null(languages)){
-    lc <- strsplit(strsplit(Sys.getlocale(), "=")[[1]][2], "\\.")[[1]][1]
-    languages <- strsplit(lc, "_")[[1]][1]
-  }
-  if(is.null(years)){
-    years <- as.numeric(format(Sys.time(), "%Y"))
-  }
-  if(!is.character(names)){
-    stop("`names` must be characters", call. = FALSE)
-  }
-  if(!is.character(languages)){
-    stop("`languages` must be characters", call. = FALSE)
-  }
-  if(!is.character(locations)){
-    stop("`locations` must be characters", call. = FALSE)
-  }
-  if(!is.character(methods)){
-    stop("`methods` must be characters", call. = FALSE)
-  }
-  if(!is.numeric(years) || any(years %% 1 != 0)){
-    stop("`years` must be integer conformable numbers", call. = FALSE)
-  }
+  
+  locale <- get_locale()
+  names <- ifnull(names, Sys.info()[["user"]])
+  languages <- ifnull(languages, locale["language"])
+  locations <- ifnull(locations, locale["location"])
+  years <- ifnull(years, as.numeric(format(Sys.time(), "%Y")))
+  
+  check_type(names, "character")
+  check_type(languages, "character")
+  check_type(locations, "character")
+  check_type(methods, "character")
+  check_type(years, "integer")
+
   gendr_warning()
   expand.grid(name = names, location = locations, language = languages, 
-             method = methods, year = years, gender = "?")
+              method = methods, year = years, gender = "?")
 }
 
 #' @rdname gendr
@@ -89,6 +73,4 @@ gendr_warning <- function(){
      "consider the impact on individuals for whom your assumptions are wrong")
   warning(sample(msgs, 1), call. = FALSE, immediate. = TRUE)
 }
-
-
 
