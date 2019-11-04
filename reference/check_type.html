@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • gendrendr</title>
+<title>Verify that a value input is of appropriate type — check_type • gendrendr</title>
 
 
 <!-- jquery -->
@@ -35,7 +35,10 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Verify that a value input is of appropriate type — check_type" />
+<meta property="og:description" content="Throws an error if x isn't proper, based on the 
+ type." />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -54,7 +57,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -110,66 +113,57 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Verify that a value input is of appropriate type</h1>
+    <small class="dont-index">Source: <a href='https://github.com/dapperstats/gendrendr/blob/master/R/utilities.R'><code>R/utilities.R</code></a></small>
+    <div class="hidden name"><code>check_type.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Throws an error if <code>x</code> isn't proper, based on the 
+ <code>type</code>.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>check_type</span>(<span class='no'>x</span>, <span class='no'>type</span>)</pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="check_type.html">check_type()</a></code> </p>
-        </td>
-        <td><p>Verify that a value input is of appropriate type</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gendr.html">gendr()</a></code> <code><a href="gendr.html">gendr_warning()</a></code> </p>
-        </td>
-        <td><p>Do not assign gender to someone</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gendrendr.html">gendrendr</a></code> </p>
-        </td>
-        <td><p>Ending Gender Application</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_locale.html">get_locale()</a></code> </p>
-        </td>
-        <td><p>Get the language and location of a system locale</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ifnull.html">ifnull()</a></code> </p>
-        </td>
-        <td><p>Replace a value with an alternative if it is NULL</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>Focal input.</p></td>
+    </tr>
+    <tr>
+      <th>type</th>
+      <td><p>Type of input that <code>x</code> should be. Presently available 
+are <code>"character"</code> (standard) and <code>"integer"</code> (conformable to
+an integer if not explicitly classed as such)/</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p><code>NULL</code> if <code>x</code> is proper, throwing an error otherwise.</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"> <span class='no'>names</span> <span class='kw'>&lt;-</span> <span class='st'>"sam"</span>
+ <span class='fu'>check_type</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>names</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"character"</span>)
+ <span class='no'>names</span> <span class='kw'>&lt;-</span> <span class='fl'>2019</span>
+ <span class='co'>#check_type(x = names, type = "character") # throws error</span>
+ <span class='no'>years</span> <span class='kw'>&lt;-</span> <span class='fl'>2019</span>
+ <span class='fu'>check_type</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>years</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"integer"</span>)
+ <span class='no'>years</span> <span class='kw'>&lt;-</span> <span class='st'>"sam"</span>
+ <span class='co'>#check_type(x = years, type = "integer") # throws error</span></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      <li><a href="#value">Value</a></li>
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 

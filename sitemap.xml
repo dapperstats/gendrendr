@@ -4,9 +4,18 @@
     <loc>https://dapperstats.github.io/gendrendr/index.html</loc>
   </url>
   <url>
+    <loc>https://dapperstats.github.io/gendrendr/reference/check_type.html</loc>
+  </url>
+  <url>
     <loc>https://dapperstats.github.io/gendrendr/reference/gendr.html</loc>
   </url>
   <url>
     <loc>https://dapperstats.github.io/gendrendr/reference/gendrendr.html</loc>
+  </url>
+  <url>
+    <loc>https://dapperstats.github.io/gendrendr/reference/get_locale.html</loc>
+  </url>
+  <url>
+    <loc>https://dapperstats.github.io/gendrendr/reference/ifnull.html</loc>
   </url>
 </urlset>
