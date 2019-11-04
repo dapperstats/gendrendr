@@ -1,3 +1,5 @@
+#' @importFrom stats setNames
+
 #' @title Ending Gender Application
 #'
 #' @description This package contains a simple set of functions designed to

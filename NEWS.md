@@ -7,6 +7,14 @@ Version numbers follow [Semantic Versioning](https://semver.org/).
 
 ### Minor editing to pkgdown site
 
+### Patch to handle empty inputs on Mac OS & Solaris
+* The LC environmental variables are concatenated using different characters.
+
+### Intro of utilities functions
+* `ifnull` to do the replacement if a value is null.
+* `check_type` to do simple error checking based on type (a generalization of the R classes of objects).
+* `get_locale` as way to do OS-agnostic language and location of a system locale.
+
 # [gendrendr 0.1.4](https://github.com/dapperstats/gendrendr/releases/tag/v0.1.4)
 *2019-11-02*
 

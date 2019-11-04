@@ -57,6 +57,9 @@ gendr()
 
 If you are interested in contributing, see the [Contributor Guidelines](https://github.com/dapperstats/gendrendr/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/dapperstats/gendrendr/blob/master/CODE_OF_CONDUCT.md).
 
+The following individuals made small contributions to the code:
+* Chuck Leong
+
 ## About the name and logo
 
 The package is a counter to and commentary on the perpetuation of gender stereotypes in the study of gender. 
