@@ -42,36 +42,36 @@
 #'
 gendr <- function(names = NULL, locations = NULL, languages = NULL, 
                   years = NULL, methods = "standard"){
-        
-        system <- switch(Sys.info()[["sysname"]], 
-                        Windows = "Win", Darwin = "Mac", Linux = "Linux")
-        lc <- Sys.getlocale()
-        lc <- ifelse(system == "Mac", strsplit(lc, "/"), strsplit(lc, ";"))[[1]][1]
-        lc <- setNames(Reduce(c, strsplit(sub(".*=", "", lc), "_")), c("language", "location"))
-
-        names <- names %||% Sys.info()[["user"]]
-        languages <- languages %||% lc["language"]
-        locations <- locations %||% lc["location"]
-        years <- years %||% as.numeric(format(Sys.time(), "%Y"))
-
-        if(!is.character(names)){
-                stop("`names` must be characters", call. = FALSE)
-        }
-        if(!is.character(languages)){
-                stop("`languages` must be characters", call. = FALSE)
-        }
-        if(!is.character(locations)){
-                stop("`locations` must be characters", call. = FALSE)
-        }
-        if(!is.character(methods)){
-                stop("`methods` must be characters", call. = FALSE)
-        }
-        if(!is.numeric(years) || any(years %% 1 != 0)){
-                stop("`years` must be integer conformable numbers", call. = FALSE)
-        }
-        gendr_warning()
-        expand.grid(name = names, location = locations, language = languages, 
-                    method = methods, year = years, gender = "?")
+  
+  system <- switch(Sys.info()[["sysname"]], 
+                   Windows = "Win", Darwin = "Mac", Linux = "Linux")
+  lc <- Sys.getlocale()
+  lc <- ifelse(system == "Mac", strsplit(lc, "/"), strsplit(lc, ";"))[[1]][1]
+  lc <- setNames(Reduce(c, strsplit(sub(".*=", "", lc), "_")), c("language", "location"))
+  
+  names <- names %||% Sys.info()[["user"]]
+  languages <- languages %||% lc["language"]
+  locations <- locations %||% lc["location"]
+  years <- years %||% as.numeric(format(Sys.time(), "%Y"))
+  
+  if(!is.character(names)){
+    stop("`names` must be characters", call. = FALSE)
+  }
+  if(!is.character(languages)){
+    stop("`languages` must be characters", call. = FALSE)
+  }
+  if(!is.character(locations)){
+    stop("`locations` must be characters", call. = FALSE)
+  }
+  if(!is.character(methods)){
+    stop("`methods` must be characters", call. = FALSE)
+  }
+  if(!is.numeric(years) || any(years %% 1 != 0)){
+    stop("`years` must be integer conformable numbers", call. = FALSE)
+  }
+  gendr_warning()
+  expand.grid(name = names, location = locations, language = languages, 
+              method = methods, year = years, gender = "?")
 }
 
 #' @rdname gendr
@@ -79,18 +79,16 @@ gendr <- function(names = NULL, locations = NULL, languages = NULL,
 #' @export
 #'
 gendr_warning <- function(){
-        msgs <- c("assigning a gender to someone else is an act of violence",
-                  "gender is not a binary",
-                  "if it is important to know someone's gender, ask them",
-                  "assigning genders is inherently inaccurate",
-                  "gender is an evolving and variable human construct",
-                  "consider the impact on individuals for whom your assumptions are wrong")
-        warning(sample(msgs, 1), call. = FALSE, immediate. = TRUE)
+  msgs <- c("assigning a gender to someone else is an act of violence",
+            "gender is not a binary",
+            "if it is important to know someone's gender, ask them",
+            "assigning genders is inherently inaccurate",
+            "gender is an evolving and variable human construct",
+            "consider the impact on individuals for whom your assumptions are wrong")
+  warning(sample(msgs, 1), call. = FALSE, immediate. = TRUE)
 }
 
 
 #' @noRd
 #' 
-`%||%` <- function(lhs, rhs) {
-        ifelse(!is.null(lhs), lhs, rhs)
-}
+`%||%` <- function(lhs, rhs) {ifelse(!is.null(lhs), lhs, rhs)}
