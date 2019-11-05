@@ -13,40 +13,42 @@ gendr_warning()
 \arguments{
 \item{names}{\code{character} vector of first names. All options available.}
 
-\item{locations}{\code{character} vector of locations. All options 
-available.}
+\item{locations}{\code{character} vector of locations. All options available.}
 
-\item{languages}{\code{character} vector of languages. All options
-available.}
+\item{languages}{\code{character} vector of languages. All options available.}
 
-\item{years}{\code{integer}-conformable vector of years. All options 
+\item{years}{\code{integer}-conformable vector of years. All options
 available.}
 
 \item{methods}{\code{character} vector of methods. All options available.}
 }
 \value{
 \code{gendr}: \code{data.frame} of genders for inputs. \cr
- \code{gendr_warning}: \code{NULL}, warning is produced.
+  \code{gendr_warning}: \code{NULL}, warning is produced.
 }
 \description{
-Recognizing that gender is an individual, person 
- characteristic, it is impossible to accurately assign gender to another. 
- Further, assigning genders to those who have been incorrectly assigned 
- genders is a retraumatizing, violent act. Finally, gender is a 
- spatiotemporally evolving concept, and therefore by definition, the 
- gender of an individual in a given space and time may not be accurately
- predicted by the genders of other individuals in other spaces and/or 
- times. A particularly prescient example of this is the recent-historic 
- Euro-centric notion of a gender binary, which is a false construct that 
- has been nonetheless used to define genders on a massive scale. \cr \cr
- \code{gendr} acknowledges these shortcomings when asked to assign the 
- gender of an individual. \cr \cr
- \code{gendr_warning} produces a warning if necessary (it's necessary).
+Recognizing that gender is an individual, person characteristic,
+  it is impossible to accurately assign gender to another. Further, assigning
+  genders to those who have been incorrectly assigned genders is a
+  retraumatizing, violent act. Finally, gender is a spatiotemporally evolving
+  concept, and therefore by definition, the gender of an individual in a
+  given space and time may not be accurately predicted by the genders of
+  other individuals in other spaces and/or times. A particularly prescient
+  example of this is the recent-historic Euro-centric notion of a gender
+  binary, which is a false construct that has been nonetheless used to define
+  genders on a massive scale. \cr \cr \code{gendr} acknowledges these
+  shortcomings when asked to assign the gender of an individual. \cr \cr
+  \code{gendr_warning} produces a warning if necessary (it's necessary).
+}
+\details{
+\code{get_locale()} now expands ISO names of language and location
+  into full automatically for MacOS. Set argument \code{localeAsis}
+  \strong{FALSE} for \code{get_locale} to see ISO names as they are.
 }
 \examples{
  \donttest{
  gendr("max", "usa", "english", 1990) # produces warning
- gendr() # produces warning 
+ gendr() # produces warning
  gendr_warning() # produces warning
  }
 
