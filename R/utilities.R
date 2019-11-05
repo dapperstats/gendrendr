@@ -64,21 +64,28 @@ check_type <- function(x, type){
 
 #' @title Get the language and location of a system locale
 #'
-#' @description OS-flexible approach to determining the system locale with 
-#'  respect to language and location.
-#' 
-#' @param category \code{character} string of the locale environmental 
-#'  variable to use, passed directly to \code{\link[base]{Sys.getlocale}}.
+#' @description OS-flexible approach to determining the system locale with
+#'   respect to language and location.
 #'
-#' @return \code{character} vector with elements \code{"language"} and 
-#'  \code{"location"}. 
-#' 
+#' @param category \code{character} string of the locale environmental variable
+#'   to use, passed directly to \code{\link[base]{Sys.getlocale}}.
+#'
+#' @param localeAsis \code{boolean} for returning \emph{language} and
+#'   \emph{location} from \link[base]{Sys.getlocale} as it is. Conversions are
+#'   done via \link[translateR]{getGoogleLanguages} and
+#'   \link[countrycode]{countrycode}
+#'
+#' @return \code{character} vector with elements \code{"language"} and
+#'   \code{"location"}.
+#'
+#' @importFrom countrycode countrycode
+#'
 #' @examples
 #'  get_locale()
 #'
-#' @export 
-#'
-get_locale <- function(category = "LC_TIME"){
+#' @export
+#' 
+get_locale <- function(category = "LC_TIME", localeAsis = FALSE){
   ismac <- Sys.info()["sysname"] == "Darwin"
   issolaris <- Sys.info()["sysname"] == "SunOS"
   splitchar <- ifelse(ismac | issolaris, "/", ";")
@@ -88,8 +95,19 @@ get_locale <- function(category = "LC_TIME"){
   locale <- strsplit(locale, "_")[[1]]
   locale <- setNames(locale, c("language", "location"))
   locale[["location"]] <- sub("\\..*", "", locale[["location"]])
-  locale
+  
+  
+  if(!localeAsis && splitchar == "/") {
+    locale["language"] <- names(which(language_codes == locale["language"]))
+    locale["location"] <- countrycode::countrycode(locale["location"], "eurostat", "un.name.en")
+    return(locale)
+  } else return(locale)
 }
 
-
-
+#' @title Print Google Language Codes
+#' 
+#' @seealso \link[translateR]{getGoogleLanguages}
+#' 
+#' @name language_codes 
+#' 
+language_codes <- unlist(translateR:::languageCodes()[["Google"]])

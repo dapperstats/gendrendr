@@ -14,5 +14,6 @@ Suggests:
   covr,
   pkgdown,
   testthat
+Imports: countrycode
 RoxygenNote: 6.1.1
 Encoding: UTF-8

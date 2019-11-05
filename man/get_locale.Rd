@@ -4,19 +4,24 @@
 \alias{get_locale}
 \title{Get the language and location of a system locale}
 \usage{
-get_locale(category = "LC_TIME")
+get_locale(category = "LC_TIME", localeAsis = FALSE)
 }
 \arguments{
-\item{category}{\code{character} string of the locale environmental 
-variable to use, passed directly to \code{\link[base]{Sys.getlocale}}.}
+\item{category}{\code{character} string of the locale environmental variable
+to use, passed directly to \code{\link[base]{Sys.getlocale}}.}
+
+\item{localeAsis}{\code{boolean} for returning \emph{language} and
+\emph{location} from \link[base]{Sys.getlocale} as it is. Conversions are
+done via \link[translateR]{getGoogleLanguages} and
+\link[countrycode]{countrycode}}
 }
 \value{
-\code{character} vector with elements \code{"language"} and 
- \code{"location"}.
+\code{character} vector with elements \code{"language"} and
+  \code{"location"}.
 }
 \description{
-OS-flexible approach to determining the system locale with 
- respect to language and location.
+OS-flexible approach to determining the system locale with
+  respect to language and location.
 }
 \examples{
  get_locale()
