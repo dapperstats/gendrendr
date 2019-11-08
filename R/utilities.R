@@ -70,10 +70,9 @@ check_type <- function(x, type){
 #' @param category \code{character} string of the locale environmental variable
 #'   to use, passed directly to \code{\link[base]{Sys.getlocale}}.
 #'
-#' @param localeAsis \code{boolean} for returning \emph{language} and
-#'   \emph{location} from \link[base]{Sys.getlocale} as it is. Conversions are
-#'   done via \link[translateR]{getGoogleLanguages} and
-#'   \link[countrycode]{countrycode}
+#' @param locale_asis \code{boolean} for returning \emph{language} and
+#'   \emph{location} from \link[base]{Sys.getlocale} as it is. Defult to
+#'   FALSE.
 #'
 #' @return \code{character} vector with elements \code{"language"} and
 #'   \code{"location"}.
@@ -85,7 +84,7 @@ check_type <- function(x, type){
 #'
 #' @export
 #' 
-get_locale <- function(category = "LC_TIME", localeAsis = FALSE){
+get_locale <- function(category = "LC_TIME", locale_asis = FALSE){
   ismac <- Sys.info()["sysname"] == "Darwin"
   issolaris <- Sys.info()["sysname"] == "SunOS"
   splitchar <- ifelse(ismac | issolaris, "/", ";")
@@ -96,18 +95,41 @@ get_locale <- function(category = "LC_TIME", localeAsis = FALSE){
   locale <- setNames(locale, c("language", "location"))
   locale[["location"]] <- sub("\\..*", "", locale[["location"]])
   
-  
-  if(!localeAsis && splitchar == "/") {
-    locale["language"] <- names(which(language_codes == locale["language"]))
-    locale["location"] <- countrycode::countrycode(locale["location"], "eurostat", "un.name.en")
-    return(locale)
-  } else return(locale)
-}
+  language_codes <- c('af', 'sq', 'ar', 'hy', 'az', 'eu', 'be', 'bn', 'bs', 
+                      'bg', 'ca', 'ceb', 'zh-CN', 'zh-TW', 'hr', 'cs', 'da', 
+                      'nl', 'en', 'eo', 'et', 'tl', 'fi', 'fr', 'gl', 'ka', 
+                      'de', 'el', 'gu', 'ht', 'ha', 'iw', 'hi', 'hmn', 'hu', 
+                      'is', 'ig', 'id', 'ga', 'it', 'ja', 'jw', 'kn', 'km', 
+                      'ko', 'lo', 'la', 'lv', 'lt', 'mk', 'ms', 'mt', 'mi', 
+                      'mr', 'mn', 'ne', 'no', 'fa', 'pl', 'pt', 'pa', 'ro', 
+                      'ru', 'sr', 'sk', 'sl', 'so', 'es', 'sw', 'sv', 'ta', 
+                      'te', 'th', 'tr', 'uk', 'ur', 'vi', 'cy', 'yi', 'yo', 
+                      'zu')
+  language_names <- c('Afrikaans', 'Albanian', 'Arabic', 'Armenian', 
+                      'Azerbaijani', 'Basque', 'Belarusian', 'Bengali', 
+                      'Bosnian', 'Bulgarian', 'Catalan', 'Cebuano', 
+                      'Chinese_Simplified', 'Chinese_Traditional', 
+                      'Croatian', 'Czech', 'Danish', 'Dutch', 'English', 
+                      'Esperanto', 'Estonian', 'Filipino', 'Finnish', 
+                      'French', 'Galician', 'Georgian', 'German', 'Greek', 
+                      'Gujarati', 'Haitian_Creole', 'Hausa', 'Hebrew', 
+                      'Hindi', 'Hmong', 'Hungarian', 'Icelandic', 'Igbo', 
+                      'Indonesian', 'Irish', 'Italian', 'Japanese', 
+                      'Javanese', 'Kannada', 'Khmer', 'Korean', 'Lao', 
+                      'Latin', 'Latvian', 'Lithuanian', 'Macedonian', 
+                      'Malay', 'Maltese', 'Maori', 'Marathi', 'Mongolian', 
+                      'Nepali', 'Norwegian', 'Persian', 'Polish', 
+                      'Portuguese', 'Punjabi', 'Romanian', 'Russian', 
+                      'Serbian', 'Slovak', 'Slovenian', 'Somali', 'Spanish', 
+                      'Swahili', 'Swedish', 'Tamil', 'Telugu', 'Thai', 
+                      'Turkish', 'Ukrainian', 'Urdu', 'Vietnamese', 'Welsh', 
+                      'Yiddish', 'Yoruba', 'Zulu')
+  names(language_codes) <- language_names
 
-#' @title Print Google Language Codes
-#' 
-#' @seealso \link[translateR]{getGoogleLanguages}
-#' 
-#' @name language_codes 
-#' 
-language_codes <- unlist(translateR:::languageCodes()[["Google"]])
+  if(!locale_asis && (ismac | issolaris)) {
+    locale["language"] <- names(which(language_codes == locale["language"]))
+    locale["location"] <- countrycode(locale["location"], 
+                                      "eurostat", "un.name.en")
+  }
+  return(locale)
+}

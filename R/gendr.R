@@ -14,7 +14,7 @@
 #'   \code{gendr_warning} produces a warning if necessary (it's necessary).
 #'
 #' @details \code{get_locale()} now expands ISO names of language and location
-#'   into full automatically for MacOS. Set argument \code{localeAsis}
+#'   into full automatically for MacOS. Set argument \code{locale_asis}
 #'   \strong{FALSE} for \code{get_locale} to see ISO names as they are.
 #'
 #' @param names \code{character} vector of first names. All options available.

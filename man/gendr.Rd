@@ -42,7 +42,7 @@ Recognizing that gender is an individual, person characteristic,
 }
 \details{
 \code{get_locale()} now expands ISO names of language and location
-  into full automatically for MacOS. Set argument \code{localeAsis}
+  into full automatically for MacOS. Set argument \code{locale_asis}
   \strong{FALSE} for \code{get_locale} to see ISO names as they are.
 }
 \examples{
