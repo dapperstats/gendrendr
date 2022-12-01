@@ -5,7 +5,7 @@
 [![Codecov test coverage](https://img.shields.io/codecov/c/github/dapperstats/gendrendr/master.svg)](https://codecov.io/github/dapperstats/gendrendr/branch/master)
 [![DOI](https://zenodo.org/badge/218626667.svg)](https://zenodo.org/badge/latestdoi/218626667)
 
-<img src="man/figures/gendrendr.png" width="200px" align="right">
+<img src="man/figures/gendrendr.png" alt="hexagon software logo, black border, very very light mint green background with an overlay of a brick motif with rather small sized rectangular bricks black in color. in the upper middle of the logo is the word gendrendr (spelled that way) in black type lowercase and in the center bottom of the logo is the null sign (an o with a line from bottom left through the top right) with its upper arm breaking out of the bricks." width="200px" align="right">
 
 
 `gendrendr` contains a simple set of functions designed to highlight the inaccuracy and violence of assigning genders to others.
